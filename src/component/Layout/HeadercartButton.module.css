@@ -8,8 +8,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 20px;
     font-weight: bold;
+    margin-right: 12%;
   }
   
   .button:hover,
