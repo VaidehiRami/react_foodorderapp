@@ -3,6 +3,7 @@ import Modaldtl from '../UI/Modaldtl';
 import CartItem from './CartItem';
 import classes from './Cart.module.css';
 import CartContext from '../../store/CartContext';
+import Modal from '../UI/Modaldtl';
 
 const Cart = (props) => {
     const cartCtx = useContext(CartContext);
@@ -32,7 +33,7 @@ const Cart = (props) => {
     </ul>
   );
   return (
-    <Modaldtl onClose={props.onClose}>
+    <Modal onClose={props.onClose}>
     {cartItems}
     <div className={classes.total}>
       <span>Total Amount</span>
@@ -44,9 +45,9 @@ const Cart = (props) => {
       </button>
       {hasItems && <button className={classes.button}>Order</button>}
     </div>
-  </Modaldtl>
+  </Modal>
 
   );
 }
 
-export default Cart
+export default Cart;

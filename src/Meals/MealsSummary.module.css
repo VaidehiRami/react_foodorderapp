@@ -15,4 +15,8 @@
   .summary h2 {
     font-size: 2rem;
     margin-top: 0;
+    font-family: cursive;
+  }
+  .summary p {
+    font-family: cursive;
   }
